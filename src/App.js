@@ -53,6 +53,10 @@ class App extends React.Component {
         <p>Click on the images no more than once! Test your memory skills!</p>
 
         <div>
+          <h4>Your Score: {this.state.score} | Your Highest Score: {this.state.highScore}</h4>
+        </div>
+        
+        <div>
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[0]}`} onClick={() => this.clicker(ranImgNums[0])}></img>
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[1]}`} onClick={() => this.clicker(ranImgNums[1])}></img>
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[2]}`} onClick={() => this.clicker(ranImgNums[2])}></img><br></br>
@@ -62,10 +66,6 @@ class App extends React.Component {
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[6]}`} onClick={() => this.clicker(ranImgNums[6])}></img>
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[7]}`} onClick={() => this.clicker(ranImgNums[7])}></img>
           <img alt="random Img" src={`https://i.pravatar.cc/150?img=${ranImgNums[8]}`} onClick={() => this.clicker(ranImgNums[8])}></img><br></br>
-        </div>
-
-        <div>
-          <h4>Your Score: {this.state.score} | Your Highest Score: {this.state.highScore}</h4>
         </div>
       </div>
     );
